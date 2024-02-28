@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Play</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/acj0asp.css">
+
+    <style>
+        .notebook{
+          width: 1px;
+          height: 2px;
+          position: relative;
+          display: inline-block;
+          margin: 10%;
+        }
+        .notebook .img-top{
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99;
+        }
+        .notebook:hover .img-top{
+          display: inline;
+        }
+        .drawbutton{
+          width: 1px;
+          height: 2px;
+          position: relative;
+          display: inline-block;
+          margin: 10%;
+        }
+        .drawbutton .img-top{
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99;
+        }
+        .drawbutton:hover .img-top{
+          display: inline;
+        }
+        .gamebutton{
+          width: 1px;
+          height: 2px;
+          position: relative;
+          display: inline-block;
+          margin: 10%;
+        }
+        .gamebutton .img-top{
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99;
+        }
+        .gamebutton:hover .img-top{
+          display: inline;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="grid">
+        <section id="notebook">
+            <div class="notebook">
+                <img src ="img/louis_notebook 1.png" alt="cover of an orange one direction composition notebook">
+                <img src="img/louis_notebook_page.png" class="img-top" alt="page from a composition notebook">
+            </div>
+        </section>
+        <section id="instructions">
+            <p>What should Meredith do?</p>
+        </section>
+        <section id="draw">
+            <a href="draw.html">
+                <div class="drawbutton">
+                    <img src="img/drawbuttonbw.png" alt="draw button black and white">
+                    <img src="img/drawbuttoncolor.png" class="img-top" alt="draw button in blue and yellow">
+                </div>
+            </a>
+        </section>
+        <section id="game">
+            <a href="characters.html">
+                <div class="gamebutton">
+                    <img src="img/gamebuttonbw.png" alt="game button in black and white">
+                    <img src="img/gamebuttoncolor.png" class="img-top" alt="game button in yellow and blue">
+                </div>
+            </a>
+            </section>
+    </div>
+  </body>
+</html>

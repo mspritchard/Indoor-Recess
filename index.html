@@ -10,9 +10,43 @@
     <title>Indoor Recess</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/acj0asp.css">
+
+    <style>
+      .playbutton{
+        width: 1px;
+        height: 2px;
+        position: relative;
+        display: inline-block;
+        margin: 10%;
+      }
+      .playbutton .img-top{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+      }
+      .playbutton:hover .img-top{
+        display: inline;
+      }
+    </style>
   </head>
   <body>
-    <h1>Indoor Recess</h1>
+    <header>
+      <p>Welcome to</p>
+      <h1>INDOOR RECESS</h1>
+    </header>
+    <main>
+      <section id="play">
+        <a href="play.html">
+          <div class="playbutton">
+            <img src ="img/playbuttonbw.png" alt="play button no black and white">
+            <img src="img/playbuttoncolor.png" class="img-top" alt="play button in yellow and blue">
+        </div>
+      </a>
+    </section>
+    </main>
   </body>
 </html>

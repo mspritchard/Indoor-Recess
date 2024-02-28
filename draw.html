@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Play</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/acj0asp.css">
+
+    <style>
+        .coloring{
+          width: 1px;
+          height: 2px;
+          position: relative;
+          display: inline-block;
+          margin: 10%;
+        }
+        .coloring .img-top{
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99;
+        }
+        .coloring:hover .img-top{
+          display: inline;
+        }
+    </style>
+</head>
+  <body id="drawpage">
+    <div class="coloring">
+        <img src ="img/colorpagebw.png" alt="uncolored coloring page">
+        <img src="img/colorpagecolor.png" class="img-top" alt="coloring page">
+    </div>
+  </body>
+</html>
