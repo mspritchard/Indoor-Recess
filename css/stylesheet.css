@@ -2,10 +2,12 @@ body{
     background-image: url("../img/background_paper.png");
     background-size: cover;
     background-attachment: fixed;
+    max-width: 1500px;
 }
 
 header{
     text-align: center;
+    padding: 3px;
 }
 
 h1{
@@ -18,10 +20,36 @@ h1{
     margin-bottom: 4%;
 }
 
-#play{
-    align-items: center;
+p{
+    font-family: "Gaegu", sans-serif;
+    font-size: 30pt;
 }
 
+
+
+.play{
+    width: 15%; 
+    margin: auto;
+}
+
+.playbutton{
+    position: relative;
+    display: inline-block;
+    margin: auto; 
+    text-align: center;
+  }
+
+  .playbutton .img-top{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  .playbutton:hover .img-top{
+    display: inline;
+  }
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,28 +57,92 @@ h1{
     grid-gap: 1%;
 }
 
+
 #notebook{
     grid-column: 1/2;
+    grid-row: 1/4;
 }
 
 #instructions{
     grid-column: 2/2;
     grid-row: 1/3;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #draw{
     grid-column: 2/2;
-    grid-row: 2/3;
-    align-items: center;
+    grid-row: 2/4;
+    text-align: center;
+    padding-right: 20rem;
 }
 
 #game{
     grid-column: 2/2;
-    grid-row: 3/3;
-    align-items: center;
+    grid-row: 3/4;
+    text-align: center;
+
+    padding-left: auto;
+    padding-right: 20rem;
 }
+
+.notebook{
+    width: 1px;
+    height: 2px;
+    position: relative;
+    display: inline-block;
+    margin: 10%;
+  }
+  .notebook .img-top{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .notebook:hover .img-top{
+    display: inline;
+  }
+  .drawbutton{
+    width: 1px;
+    height: 2px;
+    position: relative;
+    display: inline-block;
+    margin: 10%;
+  }
+  .drawbutton .img-top{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .drawbutton:hover .img-top{
+    display: inline;
+  }
+  .gamebutton{
+    width: 1px;
+    position: relative;
+    display: inline-block;
+
+  }
+  .gamebutton .img-top{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .gamebutton:hover .img-top{
+    display: inline;
+  }
 
 #drawpage{
     cursor: url(/img/crayon.png), auto;
+    align-items: center;
+}
+
+.container{
+    display: flexbox;
 }

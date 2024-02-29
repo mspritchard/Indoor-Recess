@@ -12,26 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://use.typekit.net/acj0asp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
 
-    <style>
-      .playbutton{
-        width: 1px;
-        height: 2px;
-        position: relative;
-        display: inline-block;
-        margin: 10%;
-      }
-      .playbutton .img-top{
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-      }
-      .playbutton:hover .img-top{
-        display: inline;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -39,14 +23,14 @@
       <h1>INDOOR RECESS</h1>
     </header>
     <main>
-      <section id="play">
+      <div class="play">
         <a href="play.html">
           <div class="playbutton">
             <img src ="img/playbuttonbw.png" alt="play button no black and white">
             <img src="img/playbuttoncolor.png" class="img-top" alt="play button in yellow and blue">
-        </div>
-      </a>
-    </section>
+          </div>
+        </a>
+      </div>
     </main>
   </body>
 </html>
