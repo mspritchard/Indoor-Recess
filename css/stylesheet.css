@@ -3,6 +3,16 @@ body{
     background-size: cover;
     background-attachment: fixed;
     max-width: 1500px;
+    margin: auto;
+    text-align: center;
+}
+
+.indexpage{
+  background-image: url("../img/background_paperindex.png");
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 1500px;
+  margin: auto;
 }
 
 header{
@@ -12,20 +22,32 @@ header{
 
 h1{
     font-family: gambado-sans, sans-serif;
-    font-size: 7rem;
+    font-size: 15rem;
     color: #04A1FF;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 7px;
     -webkit-text-stroke-color: #FF3399;
-    line-height: 70%;
+    line-height: 60%;
     margin-bottom: 4%;
+}
+
+h2{
+  font-family: gambado-sans, sans-serif;
+  font-size: 10rem;
+  color: #04A1FF;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #FF3399;
+  line-height: 40%;
+  margin-bottom: 3%;
 }
 
 p{
     font-family: "Gaegu", sans-serif;
-    font-size: 30pt;
+    font-size: 50pt;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 .play{
     width: 15%; 
@@ -56,7 +78,6 @@ p{
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1%;
 }
-
 
 #notebook{
     grid-column: 1/2;
@@ -141,8 +162,55 @@ p{
 #drawpage{
     cursor: url(/img/crayon.png), auto;
     align-items: center;
+    background-image: url("../img/background_paper.png");
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+}
+
+.coloring{
+  width: 1px;
+  height: 2px;
+  position: relative;
+  display: inline-block;
+  margin: 10%;
+}
+.coloring .img-top{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.coloring:hover .img-top{
+  display: inline;
 }
 
 .container{
-    display: flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.container img{
+  max-width: 350px;
+  padding: 10px;
+}
+
+.girlcharacter{
+  max-width: 500px;
+  text-align: center;
+  margin: 5px;
+  font-size: 20pt;
+}
+
+.boycharacter{
+  max-width: 500px;
+  text-align: center;
+  margin: 5px;
+  font-size: 20pt;
 }
