@@ -214,3 +214,13 @@ a{
   margin: 5px;
   font-size: 20pt;
 }
+
+.gamepage{
+  display: flex;
+  justify-content: center;
+}
+
+canvas{
+  border: 1px solid #FF3399;
+  margin: 10px;
+}
