@@ -223,7 +223,7 @@ a{
   z-index: 99;
   position: absolute;
   top: 65%;
-  left: 50%;
+  left: 30%;
   transform: scale(.5);
 }
 
@@ -235,13 +235,14 @@ a{
   z-index: 99;
   position: absolute;
   top: 65%;
-  left: 30%;
+  left: 40%;
   transform: scale(.5);
 }
+
 .copykat3{
   z-index: 99;
   position: absolute;
   top: 65%;
-  left: 40%;
+  left: 50%;
   transform: scale(.5);
 }
