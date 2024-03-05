@@ -17,7 +17,7 @@ body{
 
 header{
     text-align: center;
-    padding: 3px;
+    padding-bottom: 2px;
 }
 
 h1{
@@ -159,8 +159,8 @@ a{
     display: inline;
   }
 
-#drawpage{
-    cursor: url(/img/crayon.png), auto;
+.drawpage{
+    cursor: url("../img/crayon.png"), auto;
     align-items: center;
     background-image: url("../img/background_paper.png");
     background-size: cover;
@@ -171,11 +171,10 @@ a{
 }
 
 .coloring{
-  width: 1px;
-  height: 2px;
   position: relative;
   display: inline-block;
-  margin: 10%;
+  margin: 10% auto;
+
 }
 .coloring .img-top{
   display: none;
