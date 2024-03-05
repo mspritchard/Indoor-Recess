@@ -214,12 +214,7 @@ a{
   font-size: 20pt;
 }
 
-.gamepage{
-  display: flex;
-  justify-content: center;
+.gamepagegirl{
+  cursor: url("../img/character1.png"), auto;
 }
 
-canvas{
-  border: 1px solid #FF3399;
-  margin: 10px;
-}
