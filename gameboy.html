@@ -24,18 +24,29 @@
       <p>Click to stop Copy Kat (and her duplicates) from robbing the bank.</p>
     </header>
     <main class="gamecanvas">
-      <div class="copykat1">
-        <img src="img/copykat.gif" onclick="this.style.display='none'">
-      </div>
-      <div class="copykat2">
-        <img src="img/copykat.gif" onclick="this.style.display='none'">
-      </div>
-      <div class="copykat3">
-        <img src="img/copykat.gif" onclick="this.style.display='none'">
+      <div class="copykatcontainer">
+        <div class="copykat1">
+          <img src="img/copykat.gif" onclick="this.style.display='none'">
+        </div>
+        <div class="copykat2">
+          <img src="img/copykat.gif" onclick="this.style.display='none'">
+        </div>
+        <div class="copykat3" onclick="myFunction()">
+          <img src="img/copykat.gif" onclick="this.style.display='none'">
+          <span class="popup" id="myPopup">
+            <img src="img/popup.png">
+          </span>
+        </div>
       </div>
       <div class="thebank">
         <img src="img/bank.png">
       </div>
     </main>
+    <script>
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+      </script>
   </body>
 </html>

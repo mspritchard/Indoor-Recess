@@ -198,6 +198,20 @@ a{
   padding: 10px;
 }
 
+.gamecanvas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copykatcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: #FF3399;
+}
+
 .girlcharacter{
   max-width: 500px;
   text-align: center;
@@ -220,9 +234,11 @@ a{
 }
 
 .copykat1{
+  display: flex;
+  flex-wrap: wrap;
   z-index: 99;
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 30%;
   transform: scale(.5);
 }
@@ -232,17 +248,47 @@ a{
 }
 
 .copykat2{
+  display: flex;
+  flex-wrap: wrap;
   z-index: 99;
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 40%;
   transform: scale(.5);
 }
 
 .copykat3{
+  display: flex;
+  flex-wrap: wrap;
   z-index: 99;
   position: absolute;
-  top: 65%;
-  left: 50%;
+  top: 35%;
+  left: 53%;
   transform: scale(.5);
+  max-width: 300px;
 }
+.popup{
+  visibility: hidden;
+  max-width: 190px;
+  text-align: center;
+  z-index: 1;
+  transform: translate(-95%, -35%);
+  left: 40%;
+  top: 40%;
+}
+
+.popup.show{
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
