@@ -292,17 +292,3 @@ a{
   to {opacity:1 ;}
 }
 
-@media screen and (max-width: 800px) {
-  html{
-    font-size: 40%;
-    -webkit-text-stroke-width: 2px; 
-    line-height: 30%;
-  
-  }
-}
-
-.responsive {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-}
