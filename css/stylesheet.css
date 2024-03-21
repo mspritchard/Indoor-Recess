@@ -22,7 +22,7 @@ header{
 
 h1{
     font-family: gambado-sans, sans-serif;
-    font-size: 15rem;
+    font-size: 15em;
     color: #04A1FF;
     -webkit-text-stroke-width: 7px;
     -webkit-text-stroke-color: #FF3399;
@@ -272,7 +272,7 @@ a{
   max-width: 190px;
   text-align: center;
   z-index: 1;
-  transform: translate(-95%, -35%);
+  transform: translate(-50%, -35%);
   left: 40%;
   top: 40%;
 }
@@ -292,3 +292,17 @@ a{
   to {opacity:1 ;}
 }
 
+@media screen and (max-width: 800px) {
+  html{
+    font-size: 40%;
+    -webkit-text-stroke-width: 2px; 
+    line-height: 30%;
+  
+  }
+}
+
+.responsive {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
